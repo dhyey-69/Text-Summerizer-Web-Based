@@ -1,0 +1,8 @@
+flask
+flask-cors
+nltk
+scikit-learn
+numpy
+networkx
+transformers
+torch

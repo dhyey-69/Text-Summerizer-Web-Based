@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Summarizer</h1>
+        <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+        <select id="summaryOption">
+            <option value="tfidf">TF-IDF</option>
+            <option value="textrank">TextRank</option>
+            <option value="lexrank">LexRank</option>
+            <option value="t5">T5</option>
+        </select>
+        <input type="number" id="numSentences" placeholder="Number of sentences" min="1" value="2">
+        <button id="summarizeBtn">Summarize</button>
+        <h2>Summary:</h2>
+        <div id="summaryOutput"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
